@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sesam, öffne dich!</title>
+
+    <style>
+
+      * {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+
+      body, html {
+	margin: 0;
+	padding: 0;
+
+	background: #f9f9f9;
+      }
+
+      h1 {
+
+	padding: 20px;
+	margin: 0;
+	margin-bottom: 20px;
+
+	font-size: 180%;
+	font-weight: normal;
+
+	background-color: #1d4d99;
+	color: #fff;
+	text-transform: uppercase;
+      }
+
+      .btn {
+	display: block;
+	line-height: 1.42857143;
+	border-radius: 4px;
+
+	font-size: 150%;
+
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+
+	padding: 6px 12px;
+	margin: 10px;
+	background-color: #5cb85c;
+	border: 1px solid #4cae4c;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1>Sesam, öffne dich!</h1>
+    <a href="/open" id="open-btn" class="btn">Gib's mir hart</a>
+  </body>
+  <script>
+    var msgs = ["Gib's mir hart", "Ab durch die Hintertür", "Ich will rein!11", "Oooooh Jaaaa!"];
+    var msg = msgs[Math.floor(Math.random()*msgs.length)];
+    document.getElementById('open-btn').innerHTML = msg;
+  </script>
+</html>
