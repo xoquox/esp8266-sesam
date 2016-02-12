@@ -27,6 +27,9 @@ void setup() {
   pinMode(OPEN_PIN, OUTPUT);
   
   server.on("/", []() {
+    server.sendHeader("Pragma", "no-cache");
+    server.sendHeader("Expires", "0");
+    server.sendHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     server.send_P(200, TEXT_HTML, STATIC_INDEX_HTML);
   });
   
