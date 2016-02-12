@@ -44,9 +44,8 @@ void setup() {
     server.sendHeader("Pragma", "no-cache");
     server.sendHeader("Expires", "0");
     server.sendHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-    server.sendHeader("Location", "/");
-        
-    server.send(301, "text/plain", "Door operation started."); 
+    
+    server.send_P(200, TEXT_HTML, STATIC_OPEN_HTML);
   });
     
   server.begin();

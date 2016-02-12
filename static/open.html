@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sesam, öffne dich!</title>
+    <title>Sesam, öffnet sich!</title>
 
     <style>
 
@@ -47,23 +47,16 @@
 
 	padding: 6px 12px;
 	margin: 10px;
-	background-color: #5bc0de;
-	border: 1px solid #46b8da;
+	background-color: #5cb85c;
+	border: 1px solid #4cae4c;
       }
 
     </style>
 
+    <meta http-equiv="refresh" content="3; url=/">
   </head>
   <body>
-    <h1>Sesam, öffne dich!</h1>
-    <a href="/open" id="open-btn" class="btn">Gib's mir hart</a>
+    <h1>Sesam, öffnet sich!</h1>
+    <span class="btn">Access granted!</a>
   </body>
-  <script>
-    var msgs = ["Gib's mir hart", "Ab durch die Hintertür", "Ich will rein!11", "Oooooh Jaaaa!", "Hack the door!"];
-    var msg = msgs[Math.floor(Math.random()*msgs.length)];
-    var btn = document.getElementById('open-btn');
-    btn.innerHTML = msg;
-    btn.href = '/open?random=' + Math.random();
-    
-  </script>
 </html>
