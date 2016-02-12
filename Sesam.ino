@@ -23,6 +23,8 @@ void setup() {
   IPAddress myIP = WiFi.softAPIP();
   Serial.print("AP IP address: ");
   Serial.println(myIP);
+
+  pinMode(OPEN_PIN, OUTPUT);
   
   server.on("/", []() {
     server.send_P(200, TEXT_HTML, STATIC_INDEX_HTML);
@@ -36,7 +38,11 @@ void setup() {
       digitalWrite(OPEN_PIN, LOW);
     });   
 
+    server.sendHeader("Pragma", "no-cache");
+    server.sendHeader("Expires", "0");
+    server.sendHeader("Cache-Control", "no-cache, no-store, must-revalidate");
     server.sendHeader("Location", "/");
+        
     server.send(301, "text/plain", "Door operation started."); 
   });
     
