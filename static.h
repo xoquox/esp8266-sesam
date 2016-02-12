@@ -52,7 +52,9 @@ const PROGMEM char* STATIC_INDEX_HTML = "<!DOCTYPE html>"
 "<script>"
 "var msgs = [\"Gib's mir hart\", \"Ab durch die Hintertür\", \"Ich will rein!11\", \"Oooooh Jaaaa!\"];"
 "var msg = msgs[Math.floor(Math.random()*msgs.length)];"
-"document.getElementById('open-btn').innerHTML = msg;"
+"var btn = document.getElementById('open-btn');"
+"btn.innerHTML = msg;"
+"btn.href = '/open?random=' + Math.random();"
 "</script>"
 "</html>";
 
