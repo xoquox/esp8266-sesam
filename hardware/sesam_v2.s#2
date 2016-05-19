@@ -1151,7 +1151,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <instance part="RELAIS_2" gate="G$1" x="104.14" y="88.9"/>
 <instance part="RELAIS_3" gate="G$1" x="142.24" y="88.9"/>
 <instance part="SERIAL" gate="G$1" x="12.7" y="27.94"/>
-<instance part="OLED" gate="1" x="198.12" y="50.8" rot="R180"/>
+<instance part="OLED" gate="1" x="208.28" y="50.8" rot="R180"/>
 <instance part="X1" gate="-1" x="-38.1" y="71.12"/>
 <instance part="X1" gate="-2" x="-38.1" y="66.04"/>
 <instance part="D1" gate="1" x="22.86" y="68.58" rot="R90"/>
@@ -1179,7 +1179,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="20.32" y1="30.48" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="30.48" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="OLED" gate="1" pin="3"/>
-<wire x1="190.5" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="50.8" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="50.8" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="20.32" x2="160.02" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="15.24" x2="81.28" y2="15.24" width="0.1524" layer="91"/>
@@ -1303,7 +1303,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="0" y1="22.86" x2="0" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="0" y1="10.16" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="OLED" gate="1" pin="4"/>
-<wire x1="190.5" y1="48.26" x2="167.64" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="48.26" x2="167.64" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="48.26" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="22.86" y1="66.04" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
@@ -1396,6 +1396,8 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="127" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="127" y1="50.8" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="50.8" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="53.34" x2="132.08" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="OLED" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -1408,7 +1410,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <pinref part="SERIAL" gate="G$1" pin="6"/>
 <wire x1="-5.08" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="OLED" gate="1" pin="1"/>
-<wire x1="190.5" y1="55.88" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="55.88" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="55.88" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1466,22 +1468,25 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="154.94" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="*GPIO9"/>
-<wire x1="99.06" y1="27.94" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="17.78" x2="157.48" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="17.78" x2="157.48" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-4" pin="S"/>
-<wire x1="157.48" y1="22.86" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN+"/>
 <wire x1="-27.94" y1="73.66" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="73.66" x2="-33.02" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-1" pin="KL"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<wire x1="78.74" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="12.7" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="22.86" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-4" pin="S"/>
+<wire x1="172.72" y1="22.86" x2="175.26" y2="22.86" width="0.1524" layer="91"/>
+<junction x="172.72" y="22.86"/>
+<wire x1="78.74" y1="12.7" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="ADC"/>
+<wire x1="83.82" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
