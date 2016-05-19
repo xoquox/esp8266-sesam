@@ -9,19 +9,19 @@
 <grid distance="0.3175" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -32,19 +32,19 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -55,8 +55,8 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
-<layer number="101" name="Hidden" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="102" name="Changes" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Hidden" color="15" fill="1" visible="no" active="yes"/>
+<layer number="102" name="Changes" color="12" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -64,6 +64,9 @@
 <wire x1="70" y1="0" x2="70" y2="70" width="0" layer="20"/>
 <wire x1="70" y1="70" x2="0" y2="70" width="0" layer="20"/>
 <wire x1="0" y1="70" x2="0" y2="0" width="0" layer="20"/>
+<text x="46.355" y="43.815" size="1.778" layer="26" rot="MR0">esp8266-sesam</text>
+<text x="45.72" y="40.9575" size="1.778" layer="26" rot="MR0">layout by xoquox</text>
+<text x="2.54" y="56.515" size="1.778" layer="26" rot="MR270">https://hackerspace-bamberg.de/esp8266-sesam</text>
 </plain>
 <libraries>
 <library name="esp8266modules">
@@ -604,16 +607,16 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U1" library="esp8266modules" package="ESP12E-SMD" value="" x="55.44" y="28.98" rot="R270"/>
-<element name="U$1" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="31.5" y="59.22" rot="MR180"/>
+<element name="DC/DC" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="31.5" y="59.22" rot="MR180"/>
 <element name="OUTPUT_CON" library="con-molex" package="70543-06" value="C-GRID-06-70543" x="25.29" y="5.1" rot="MR0">
 <attribute name="OC_NEWARK" value="unknown" x="2.43" y="-55.86" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="" x="2.43" y="-55.86" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="2.43" y="-55.86" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="2.43" y="-55.86" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="RELAIS_1" library="ic-package" package="SOCKET-14" value="" x="7.56" y="26.46" rot="MR270"/>
-<element name="RELAIS_2" library="ic-package" package="SOCKET-14" value="" x="21.42" y="26.46" rot="MR270"/>
-<element name="RELAIS_3" library="ic-package" package="SOCKET-14" value="" x="35.28" y="26.46" rot="MR270"/>
+<element name="RELAIS_1" library="ic-package" package="SOCKET-14" value="V23100-V4005-A010" x="7.56" y="26.46" rot="MR270"/>
+<element name="RELAIS_2" library="ic-package" package="SOCKET-14" value="V23100-A4005-A010" x="21.42" y="26.46" rot="MR270"/>
+<element name="RELAIS_3" library="ic-package" package="SOCKET-14" value="V23100-A4005-A010" x="35.28" y="26.46" rot="MR270"/>
 <element name="SERIAL" library="con-lstb" package="MA04-2" value="" x="63" y="46.62" rot="MR180">
 <attribute name="OC_NEWARK" value="unknown" x="63" y="46.62" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="" x="63" y="46.62" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -626,14 +629,14 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="41.58" y="5.04" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="41.58" y="5.04" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="X1" library="con-wago-508" package="W237-132" value="" x="5.04" y="63" rot="MR90">
+<element name="POWER" library="con-wago-508" package="W237-132" value="" x="5.04" y="63" rot="MR90">
 <attribute name="OC_NEWARK" value="unknown" x="5.04" y="63" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MPN" value="" x="5.04" y="63" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MF" value="" x="5.04" y="63" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="5.04" y="63" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="D1" library="diode" package="DO35Z10" value="3.3V" x="66.78" y="60.48" rot="MR90"/>
-<element name="X2" library="con-molex" package="70543-06" value="C-GRID-06-70543" x="59.22" y="5.04" rot="MR0">
+<element name="GPIO" library="con-molex" package="70543-06" value="C-GRID-06-70543" x="59.22" y="5.04" rot="MR0">
 <attribute name="OC_NEWARK" value="unknown" x="59.22" y="5.04" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="" x="59.22" y="5.04" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MF" value="" x="59.22" y="5.04" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -642,12 +645,12 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="3V3">
-<contactref element="U$1" pad="OUT+"/>
+<contactref element="DC/DC" pad="OUT+"/>
 <contactref element="U1" pad="VCC"/>
 <contactref element="SERIAL" pad="7"/>
 <contactref element="OLED" pad="3"/>
 <contactref element="D1" pad="C"/>
-<contactref element="X2" pad="5"/>
+<contactref element="GPIO" pad="5"/>
 <wire x1="66.78" y1="55.4" x2="66.78" y2="47.92" width="0.254" layer="1"/>
 <wire x1="66.78" y1="47.92" x2="66.81" y2="47.89" width="0.254" layer="1"/>
 <wire x1="51.312" y1="50.584" x2="51.312" y2="50.677" width="0.254" layer="1"/>
@@ -751,12 +754,12 @@ design rules under a new name.</description>
 <contactref element="RELAIS_2" pad="13"/>
 <contactref element="RELAIS_3" pad="13"/>
 <contactref element="RELAIS_3" pad="9"/>
-<contactref element="U$1" pad="OUT-"/>
+<contactref element="DC/DC" pad="OUT-"/>
 <contactref element="U1" pad="GND"/>
 <contactref element="SERIAL" pad="2"/>
 <contactref element="OLED" pad="4"/>
 <contactref element="D1" pad="A"/>
-<contactref element="X2" pad="6"/>
+<contactref element="GPIO" pad="6"/>
 <polygon width="0.3048" layer="1">
 <vertex x="0" y="70"/>
 <vertex x="70" y="70"/>
@@ -778,8 +781,8 @@ design rules under a new name.</description>
 <vertex x="0.06" y="-0.12"/>
 <vertex x="0.06" y="69.96"/>
 </polygon>
-<contactref element="U$1" pad="IN-"/>
-<contactref element="X1" pad="2"/>
+<contactref element="DC/DC" pad="IN-"/>
+<contactref element="POWER" pad="2"/>
 <wire x1="51.312" y1="67.856" x2="65.8115" y2="67.856" width="0.254" layer="1"/>
 <wire x1="65.8115" y1="67.856" x2="66.9925" y2="66.675" width="0.254" layer="1"/>
 <wire x1="66.9925" y1="66.675" x2="66.9925" y2="65.7725" width="0.254" layer="1"/>
@@ -912,8 +915,8 @@ design rules under a new name.</description>
 <wire x1="66.7575" y1="45.4025" x2="66.81" y2="45.35" width="0.254" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="U$1" pad="IN+"/>
-<contactref element="X1" pad="1"/>
+<contactref element="DC/DC" pad="IN+"/>
+<contactref element="POWER" pad="1"/>
 <wire x1="4.405" y1="60.46" x2="8.755" y2="60.46" width="0.254" layer="1"/>
 <wire x1="8.755" y1="60.46" x2="11.7475" y2="57.4675" width="0.254" layer="1"/>
 <wire x1="11.7475" y1="57.4675" x2="11.7475" y2="50.6435" width="0.254" layer="1"/>
@@ -933,7 +936,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$9">
 <contactref element="U1" pad="GPIO4"/>
-<contactref element="X2" pad="1"/>
+<contactref element="GPIO" pad="1"/>
 <wire x1="65.57" y1="5.04" x2="65.57" y2="15.3925" width="0.254" layer="1"/>
 <wire x1="65.57" y1="15.3925" x2="64.135" y2="16.8275" width="0.254" layer="1"/>
 <wire x1="64.135" y1="16.8275" x2="59.3725" y2="16.8275" width="0.254" layer="1"/>
@@ -942,7 +945,7 @@ design rules under a new name.</description>
 <wire x1="57.4675" y1="20.6525" x2="57.24" y2="20.88" width="0.254" layer="1"/>
 </signal>
 <signal name="N$10">
-<contactref element="X2" pad="2"/>
+<contactref element="GPIO" pad="2"/>
 <contactref element="U1" pad="GPIO5"/>
 <wire x1="55.24" y1="20.88" x2="55.24" y2="19.69" width="0.254" layer="1"/>
 <wire x1="55.24" y1="19.69" x2="59.055" y2="15.875" width="0.254" layer="1"/>
@@ -955,7 +958,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$11">
 <contactref element="U1" pad="GPIO15"/>
-<contactref element="X2" pad="3"/>
+<contactref element="GPIO" pad="3"/>
 <wire x1="60.49" y1="5.04" x2="60.49" y2="5.5625" width="0.254" layer="1"/>
 <wire x1="60.49" y1="5.5625" x2="63.5" y2="8.5725" width="0.254" layer="1"/>
 <wire x1="63.5" y1="8.5725" x2="63.5" y2="13.97" width="0.254" layer="1"/>
@@ -976,7 +979,7 @@ design rules under a new name.</description>
 <via x="10" y="10" extent="1-16" drill="3.2"/>
 </signal>
 <signal name="N$12">
-<contactref element="X2" pad="4"/>
+<contactref element="GPIO" pad="4"/>
 <contactref element="U1" pad="ADC"/>
 <wire x1="59.24" y1="37.28" x2="59.24" y2="39.82" width="0.254" layer="1"/>
 <wire x1="59.24" y1="39.82" x2="57.785" y2="41.275" width="0.254" layer="1"/>

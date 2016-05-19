@@ -1123,16 +1123,16 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 </classes>
 <parts>
 <part name="U1" library="esp8266modules" deviceset="ESP12E" device="SMD"/>
-<part name="U$1" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
+<part name="DC/DC" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
 <part name="OUTPUT_CON" library="con-molex" deviceset="C-GRID-06" device="-70543"/>
-<part name="RELAIS_1" library="ic-package" deviceset="DIL14" device="S"/>
-<part name="RELAIS_2" library="ic-package" deviceset="DIL14" device="S"/>
-<part name="RELAIS_3" library="ic-package" deviceset="DIL14" device="S"/>
+<part name="RELAIS_1" library="ic-package" deviceset="DIL14" device="S" value="V23100-V4005-A010"/>
+<part name="RELAIS_2" library="ic-package" deviceset="DIL14" device="S" value="V23100-A4005-A010"/>
+<part name="RELAIS_3" library="ic-package" deviceset="DIL14" device="S" value="V23100-A4005-A010"/>
 <part name="SERIAL" library="con-lstb" deviceset="MA04-2" device=""/>
 <part name="OLED" library="con-lstb" deviceset="MA04-1" device=""/>
-<part name="X1" library="con-wago-508" deviceset="W237-02P" device=""/>
+<part name="POWER" library="con-wago-508" deviceset="W237-02P" device=""/>
 <part name="D1" library="diode" deviceset="ZTE" device="" value="3.3V"/>
-<part name="X2" library="con-molex" deviceset="C-GRID-06" device="-70543"/>
+<part name="GPIO" library="con-molex" deviceset="C-GRID-06" device="-70543"/>
 </parts>
 <sheets>
 <sheet>
@@ -1140,7 +1140,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="101.6" y="55.88"/>
-<instance part="U$1" gate="G$1" x="-10.16" y="68.58"/>
+<instance part="DC/DC" gate="G$1" x="-10.16" y="68.58"/>
 <instance part="OUTPUT_CON" gate="-1" x="170.18" y="78.74"/>
 <instance part="OUTPUT_CON" gate="-2" x="170.18" y="76.2"/>
 <instance part="OUTPUT_CON" gate="-3" x="170.18" y="73.66"/>
@@ -1152,22 +1152,22 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <instance part="RELAIS_3" gate="G$1" x="142.24" y="88.9"/>
 <instance part="SERIAL" gate="G$1" x="12.7" y="27.94"/>
 <instance part="OLED" gate="1" x="208.28" y="50.8" rot="R180"/>
-<instance part="X1" gate="-1" x="-38.1" y="71.12"/>
-<instance part="X1" gate="-2" x="-38.1" y="66.04"/>
+<instance part="POWER" gate="-1" x="-38.1" y="71.12"/>
+<instance part="POWER" gate="-2" x="-38.1" y="66.04"/>
 <instance part="D1" gate="1" x="22.86" y="68.58" rot="R90"/>
-<instance part="X2" gate="-1" x="175.26" y="30.48"/>
-<instance part="X2" gate="-2" x="175.26" y="27.94"/>
-<instance part="X2" gate="-3" x="175.26" y="25.4"/>
-<instance part="X2" gate="-4" x="175.26" y="22.86"/>
-<instance part="X2" gate="-5" x="175.26" y="20.32"/>
-<instance part="X2" gate="-6" x="175.26" y="17.78"/>
+<instance part="GPIO" gate="-1" x="175.26" y="30.48"/>
+<instance part="GPIO" gate="-2" x="175.26" y="27.94"/>
+<instance part="GPIO" gate="-3" x="175.26" y="25.4"/>
+<instance part="GPIO" gate="-4" x="175.26" y="22.86"/>
+<instance part="GPIO" gate="-5" x="175.26" y="20.32"/>
+<instance part="GPIO" gate="-6" x="175.26" y="17.78"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="3V3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUT+"/>
+<pinref part="DC/DC" gate="G$1" pin="OUT+"/>
 <wire x1="7.62" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="73.66" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="73.66" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
@@ -1186,7 +1186,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="81.28" y1="15.24" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="C"/>
 <wire x1="22.86" y1="71.12" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-5" pin="S"/>
+<pinref part="GPIO" gate="-5" pin="S"/>
 <wire x1="172.72" y1="20.32" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
 <label x="17.78" y="78.74" size="1.778" layer="95"/>
 <label x="170.18" y="20.32" size="1.778" layer="95"/>
@@ -1285,7 +1285,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="154.94" y1="93.98" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="RELAIS_3" gate="G$1" pin="9"/>
 <wire x1="154.94" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="OUT-"/>
+<pinref part="DC/DC" gate="G$1" pin="OUT-"/>
 <wire x1="7.62" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="63.5" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
@@ -1307,7 +1307,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="167.64" y1="48.26" x2="167.64" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="22.86" y1="66.04" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-6" pin="S"/>
+<pinref part="GPIO" gate="-6" pin="S"/>
 <wire x1="172.72" y1="17.78" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
 <label x="10.16" y="60.96" size="1.778" layer="95"/>
 <label x="170.18" y="45.72" size="1.778" layer="95"/>
@@ -1315,10 +1315,10 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <label x="0" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="IN-"/>
+<pinref part="DC/DC" gate="G$1" pin="IN-"/>
 <wire x1="-33.02" y1="66.04" x2="-27.94" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="66.04" x2="-27.94" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="POWER" gate="-2" pin="KL"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1444,13 +1444,13 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <pinref part="U1" gate="G$1" pin="GPIO4"/>
 <wire x1="116.84" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="58.42" x2="147.32" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-1" pin="S"/>
+<pinref part="GPIO" gate="-1" pin="S"/>
 <wire x1="147.32" y1="30.48" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
+<pinref part="GPIO" gate="-2" pin="S"/>
 <wire x1="172.72" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="27.94" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GPIO5"/>
@@ -1464,16 +1464,16 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="121.92" y1="48.26" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="20.32" x2="154.94" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="20.32" x2="154.94" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-3" pin="S"/>
+<pinref part="GPIO" gate="-3" pin="S"/>
 <wire x1="154.94" y1="25.4" x2="172.72" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="IN+"/>
+<pinref part="DC/DC" gate="G$1" pin="IN+"/>
 <wire x1="-27.94" y1="73.66" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="73.66" x2="-33.02" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="KL"/>
+<pinref part="POWER" gate="-1" pin="KL"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -1481,7 +1481,7 @@ diameter 2 mm, horizontal, grid 10.16mm</description>
 <wire x1="78.74" y1="12.7" x2="165.1" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="12.7" x2="165.1" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="22.86" x2="172.72" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="X2" gate="-4" pin="S"/>
+<pinref part="GPIO" gate="-4" pin="S"/>
 <wire x1="172.72" y1="22.86" x2="175.26" y2="22.86" width="0.1524" layer="91"/>
 <junction x="172.72" y="22.86"/>
 <wire x1="78.74" y1="12.7" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
