@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.02" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -607,12 +607,12 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U1" library="esp8266modules" package="ESP12E-SMD" value="" x="55.09" y="29" rot="R270"/>
-<element name="U$1" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="37.72" y="58.37" rot="R180"/>
-<element name="OUTPUT_CON" library="con-molex" package="70543-06" value="C-GRID-06-70543" x="14.17" y="4.38" rot="R180">
-<attribute name="OC_NEWARK" value="unknown" x="-8.69" y="65.34" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="-8.69" y="65.34" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="" x="-8.69" y="65.34" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="-8.69" y="65.34" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="U$1" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" value="DC-DC-STEP-DOWN-LM2596" x="34.72" y="58.37" rot="R180"/>
+<element name="OUTPUT_CON" library="con-molex" package="70543-06" value="C-GRID-06-70543" x="14.23" y="3.56" rot="R180">
+<attribute name="OC_NEWARK" value="unknown" x="-8.63" y="64.52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="-8.63" y="64.52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="-8.63" y="64.52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="-8.63" y="64.52" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="RELAIS_1" library="ic-package" package="SOCKET-14" value="" x="11.34" y="35.95"/>
 <element name="RELAIS_2" library="ic-package" package="SOCKET-14" value="" x="17.34" y="21.84"/>
@@ -629,13 +629,13 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="35.45" y="19.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="35.45" y="19.35" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="X1" library="con-wago-508" package="W237-132" value="" x="64.67" y="58.37" rot="R90">
-<attribute name="OC_NEWARK" value="unknown" x="64.67" y="58.37" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="" x="64.67" y="58.37" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="" x="64.67" y="58.37" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="64.67" y="58.37" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X1" library="con-wago-508" package="W237-132" value="" x="64.67" y="49.37" rot="R90">
+<attribute name="OC_NEWARK" value="unknown" x="64.67" y="49.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="64.67" y="49.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="" x="64.67" y="49.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="64.67" y="49.37" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D1" library="diode" package="DO35Z10" value="3.3V" x="13.32" y="58.84" rot="R90"/>
+<element name="D1" library="diode" package="DO35Z10" value="3.3V" x="10.32" y="58.84" rot="R90"/>
 <element name="X2" library="con-molex" package="70543-06" value="C-GRID-06-70543" x="38.03" y="4.58" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="38.03" y="4.58" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="38.03" y="4.58" size="1.778" layer="27" rot="R180" display="off"/>
@@ -651,9 +651,9 @@ design rules under a new name.</description>
 <contactref element="OLED" pad="3"/>
 <contactref element="D1" pad="C"/>
 <contactref element="X2" pad="5"/>
-<wire x1="17.908" y1="49.734" x2="17.346" y2="49.734" width="0.6096" layer="1"/>
-<wire x1="17.346" y1="49.734" x2="13.32" y2="53.76" width="0.6096" layer="1"/>
-<wire x1="13.32" y1="53.76" x2="33.04" y2="53.76" width="0.6096" layer="1"/>
+<wire x1="14.908" y1="49.734" x2="15.346" y2="49.734" width="0.6096" layer="1"/>
+<wire x1="15.346" y1="49.734" x2="10.32" y2="53.76" width="0.6096" layer="1"/>
+<wire x1="10.32" y1="53.76" x2="33.04" y2="53.76" width="0.6096" layer="1"/>
 <wire x1="33.04" y1="53.76" x2="47" y2="39.8" width="0.6096" layer="1"/>
 <wire x1="47" y1="39.8" x2="47" y2="37.41" width="0.6096" layer="1"/>
 <wire x1="47" y1="37.41" x2="46.89" y2="37.3" width="0.6096" layer="1"/>
@@ -666,8 +666,8 @@ design rules under a new name.</description>
 <contactref element="RELAIS_1" pad="1"/>
 <contactref element="RELAIS_1" pad="14"/>
 <wire x1="3.72" y1="39.76" x2="3.72" y2="32.14" width="0.6096" layer="1"/>
-<wire x1="3.72" y1="32.14" x2="3.72" y2="8.48" width="0.6096" layer="1"/>
-<wire x1="3.72" y1="8.48" x2="7.82" y2="4.38" width="0.6096" layer="1"/>
+<wire x1="3.72" y1="32.14" x2="3.72" y2="7.62" width="0.6096" layer="1"/>
+<wire x1="3.72" y1="7.62" x2="7.88" y2="3.56" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="OUTPUT_CON" pad="5"/>
@@ -678,20 +678,22 @@ design rules under a new name.</description>
 <wire x1="18.96" y1="29.76" x2="18.4" y2="29.2" width="0.6096" layer="1"/>
 <wire x1="18.4" y1="29.2" x2="7.2" y2="29.2" width="0.6096" layer="1"/>
 <wire x1="7.2" y1="29.2" x2="5.4" y2="27.4" width="0.6096" layer="1"/>
-<wire x1="5.4" y1="27.4" x2="5.4" y2="11.8" width="0.6096" layer="1"/>
-<wire x1="5.4" y1="11.8" x2="10.2" y2="7" width="0.6096" layer="1"/>
-<wire x1="10.2" y1="7" x2="10.2" y2="4.54" width="0.6096" layer="1"/>
-<wire x1="10.2" y1="4.54" x2="10.36" y2="4.38" width="0.6096" layer="1"/>
+<wire x1="5.4" y1="27.4" x2="5.4" y2="10.4" width="0.6096" layer="1"/>
+<wire x1="5.4" y1="10.4" x2="10.2" y2="5.6" width="0.6096" layer="1"/>
+<wire x1="10.2" y1="5.6" x2="10.2" y2="4.54" width="0.6096" layer="1"/>
+<wire x1="10.2" y1="4.54" x2="10.42" y2="3.56" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="OUTPUT_CON" pad="4"/>
 <contactref element="RELAIS_2" pad="1"/>
 <contactref element="RELAIS_2" pad="14"/>
 <wire x1="9.72" y1="25.65" x2="9.72" y2="18.03" width="0.6096" layer="1"/>
-<wire x1="9.72" y1="18.03" x2="9.72" y2="11.08" width="0.6096" layer="1"/>
-<wire x1="9.72" y1="11.08" x2="12.8" y2="8" width="0.6096" layer="1"/>
-<wire x1="12.8" y1="8" x2="12.8" y2="4.48" width="0.6096" layer="1"/>
-<wire x1="12.8" y1="4.48" x2="12.9" y2="4.38" width="0.6096" layer="1"/>
+<wire x1="9.72" y1="18.03" x2="9.72" y2="16.16" width="0.6096" layer="1"/>
+<wire x1="9.72" y1="16.16" x2="13.82" y2="12.02" width="0.6096" layer="1"/>
+<wire x1="13.82" y1="12.02" x2="13.8" y2="8.66" width="0.6096" layer="1"/>
+<wire x1="13.8" y1="8.66" x2="12.8" y2="7.54" width="0.6096" layer="1"/>
+<wire x1="12.8" y1="7.54" x2="12.8" y2="4.48" width="0.6096" layer="1"/>
+<wire x1="12.8" y1="4.48" x2="12.96" y2="3.56" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="OUTPUT_CON" pad="2"/>
@@ -705,7 +707,7 @@ design rules under a new name.</description>
 <wire x1="21" y1="10" x2="19.8" y2="10" width="0.6096" layer="1"/>
 <wire x1="19.8" y1="10" x2="18" y2="8.2" width="0.6096" layer="1"/>
 <wire x1="18" y1="8.2" x2="18" y2="4.4" width="0.6096" layer="1"/>
-<wire x1="18" y1="4.4" x2="17.98" y2="4.38" width="0.6096" layer="1"/>
+<wire x1="18" y1="4.4" x2="18.04" y2="3.56" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="OUTPUT_CON" pad="1"/>
@@ -719,7 +721,7 @@ design rules under a new name.</description>
 <wire x1="29.8" y1="28.2" x2="29.8" y2="16.6" width="0.6096" layer="1"/>
 <wire x1="29.8" y1="16.6" x2="20.6" y2="7.4" width="0.6096" layer="1"/>
 <wire x1="20.6" y1="7.4" x2="20.6" y2="4.46" width="0.6096" layer="1"/>
-<wire x1="20.6" y1="4.46" x2="20.52" y2="4.38" width="0.6096" layer="1"/>
+<wire x1="20.6" y1="4.46" x2="20.58" y2="3.56" width="0.6096" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="RELAIS_1" pad="9"/>
@@ -734,8 +736,8 @@ design rules under a new name.</description>
 <contactref element="OLED" pad="4"/>
 <contactref element="D1" pad="A"/>
 <contactref element="X2" pad="6"/>
-<wire x1="17.908" y1="67.006" x2="16.406" y2="67.006" width="0.6096" layer="1"/>
-<wire x1="16.406" y1="67.006" x2="13.32" y2="63.92" width="0.6096" layer="1"/>
+<wire x1="14.908" y1="67.006" x2="15.406" y2="67.006" width="0.6096" layer="1"/>
+<wire x1="15.406" y1="67.006" x2="10.32" y2="63.92" width="0.6096" layer="1"/>
 <wire x1="46.89" y1="20.9" x2="40.675" y2="20.9" width="0.3048" layer="1"/>
 <wire x1="40.675" y1="20.9" x2="38.379" y2="23.196" width="0.3048" layer="1"/>
 <wire x1="38.379" y1="23.196" x2="35.486" y2="23.196" width="0.3048" layer="1"/>
@@ -867,14 +869,16 @@ design rules under a new name.</description>
 <signal name="N$22">
 <contactref element="U$1" pad="IN+"/>
 <contactref element="X1" pad="1"/>
-<wire x1="57.532" y1="49.734" x2="59.209" y2="49.734" width="0.6096" layer="1"/>
-<wire x1="59.209" y1="49.734" x2="65.305" y2="55.83" width="0.6096" layer="1"/>
+<wire x1="54.532" y1="49.734" x2="56.969" y2="47.314" width="0.6096" layer="1"/>
+<wire x1="56.969" y1="47.314" x2="65.305" y2="46.83" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$23">
 <contactref element="U$1" pad="IN-"/>
 <contactref element="X1" pad="2"/>
-<wire x1="65.305" y1="60.91" x2="63.628" y2="60.91" width="0.6096" layer="1"/>
-<wire x1="63.628" y1="60.91" x2="57.532" y2="67.006" width="0.6096" layer="1"/>
+<wire x1="65.305" y1="51.91" x2="65.188" y2="60.53" width="0.6096" layer="1"/>
+<wire x1="65.188" y1="60.53" x2="65.188" y2="61.992" width="0.6096" layer="1"/>
+<wire x1="65.188" y1="61.992" x2="60.26" y2="67" width="0.6096" layer="1"/>
+<wire x1="60.26" y1="67" x2="54.532" y2="67.006" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="RELAIS_2" pad="8"/>
@@ -886,7 +890,7 @@ design rules under a new name.</description>
 <wire x1="20.8" y1="12.2" x2="17.4" y2="12.2" width="0.6096" layer="1"/>
 <wire x1="17.4" y1="12.2" x2="15.6" y2="10.4" width="0.6096" layer="1"/>
 <wire x1="15.6" y1="10.4" x2="15.6" y2="4.54" width="0.6096" layer="1"/>
-<wire x1="15.6" y1="4.54" x2="15.44" y2="4.38" width="0.6096" layer="1"/>
+<wire x1="15.6" y1="4.54" x2="15.5" y2="3.56" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U1" pad="GPIO4"/>
@@ -945,6 +949,12 @@ design rules under a new name.</description>
 <wire x1="32.984" y1="11.987" x2="36.753" y2="8.218" width="0.3048" layer="1"/>
 <wire x1="36.753" y1="8.218" x2="36.753" y2="4.587" width="0.3048" layer="1"/>
 <wire x1="36.753" y1="4.587" x2="36.76" y2="4.58" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$1">
+<via x="60" y="60" extent="1-16" drill="3.2"/>
+</signal>
+<signal name="N$2">
+<via x="10" y="10" extent="1-16" drill="3.2"/>
 </signal>
 </signals>
 </board>
