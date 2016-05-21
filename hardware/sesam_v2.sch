@@ -11025,7 +11025,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="GPIO" gate="-4" x="175.26" y="22.86"/>
 <instance part="GPIO" gate="-5" x="175.26" y="20.32"/>
 <instance part="GPIO" gate="-6" x="175.26" y="17.78"/>
-<instance part="IC1" gate="A1" x="25.4" y="73.66" rot="R180"/>
+<instance part="IC1" gate="A1" x="25.4" y="73.66" rot="MR180"/>
 <instance part="C1" gate="G$1" x="10.16" y="71.12"/>
 <instance part="C2" gate="G$1" x="40.64" y="71.12"/>
 </instances>
@@ -11115,19 +11115,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="DC/DC" gate="G$1" pin="OUT+"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A1" pin="VO"/>
+<pinref part="IC1" gate="A1" pin="VI"/>
 <wire x1="10.16" y1="73.66" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
 <junction x="10.16" y="73.66"/>
 </segment>
 </net>
 <net name="3V3" class="0">
 <segment>
-<pinref part="IC1" gate="A1" pin="VI"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="73.66" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="73.66" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
-<junction x="40.64" y="73.66"/>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="68.58" y1="48.26" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
@@ -11135,6 +11132,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="83.82" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
 <junction x="68.58" y="48.26"/>
 <label x="76.2" y="48.26" size="1.778" layer="95"/>
+<pinref part="IC1" gate="A1" pin="VO"/>
+<wire x1="40.64" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
+<junction x="40.64" y="73.66"/>
 </segment>
 <segment>
 <pinref part="GPIO" gate="-5" pin="S"/>
