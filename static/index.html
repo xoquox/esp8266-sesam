@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,86 +9,86 @@
 
     <style type="text/css">
 
-      * {
-	    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      }
+        * {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 
-      body, html {
-	    margin: 0;
-	    padding: 0;
+        body, html {
+            margin: 0;
+            padding: 0;
 
-	    background: #f9f9f9;
-      }
+            background: #f9f9f9;
+        }
 
-      h1 {
+        h1 {
 
-	    padding: 20px;
-	    margin: 0;
-	    margin-bottom: 20px;
+            padding: 20px;
+            margin: 0;
+            margin-bottom: 20px;
 
-	    font-size: 180%;
-	    font-weight: normal;
+            font-size: 180%;
+            font-weight: normal;
 
-	    background-color: #1d4d99;
-	    color: #fff;
-	    text-transform: uppercase;
-      }
+            background-color: #1d4d99;
+            color: #fff;
+            text-transform: uppercase;
+        }
 
-      .btn {
-	    display: block;
-	    line-height: 1.42857143;
-	    border-radius: 4px;
+        .btn {
+            display: block;
+            line-height: 1.42857143;
+            border-radius: 4px;
 
-	    font-size: 150%;
-        width: 100%;
+            font-size: 150%;
+            width: 100%;
 
-	    text-decoration: none;
-	    color: #fff;
-	    text-align: center;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
 
-	    padding: 10px 12px;
-	    margin: 10px;
-	    background-color: #5bc0de;
-	    border: 1px solid #46b8da;
-      }
+            padding: 10px 12px;
+            margin: 10px;
+            background-color: #5bc0de;
+            border: 1px solid #46b8da;
+        }
 
     </style>
 
-  </head>
-  <body>
-    <h1>Sesam, öffne dich!</h1>
-    <div id="buttons">Loading....</div>
-  </body>
- 
-  <script type="text/javascript">
+</head>
+<body>
+<h1>Sesam, öffne dich!</h1>
+<div id="buttons">Loading....</div>
+</body>
+
+<script type="text/javascript">
 
     var buttons = document.getElementById('buttons');
-	var request = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
 
-	request.open('GET', '/relais', true);
+    request.open('GET', '/relais', true);
 
-	request.onload = function() {
-	  if (request.status >= 200 && request.status < 400) {
-        buttons.innerHTML = "";
+    request.onload = function () {
+        if (request.status >= 200 && request.status < 400) {
+            buttons.innerHTML = "";
 
-	    var data = JSON.parse(request.responseText);
+            var data = JSON.parse(request.responseText);
 
-        data.relais.forEach(function(relais) {
-            var button = document.createElement("button"); 
-            button.innerHTML = relais.name;
-            button.setAttribute('class', 'btn');
+            data.relais.forEach(function (relais) {
+                var button = document.createElement("button");
+                button.innerHTML = relais.name;
+                button.setAttribute('class', 'btn');
 
-            button.onclick = function() {
-                var request = new XMLHttpRequest();
-                request.open('POST', relais.url, true);
-                request.send({"foo": "42"});
-            };
+                button.onclick = function () {
+                    var request = new XMLHttpRequest();
+                    request.open('POST', relais.url, true);
+                    request.send({"foo": "42"});
+                };
 
-            buttons.appendChild(button);
-        });
-	  }
-	};
+                buttons.appendChild(button);
+            });
+        }
+    };
 
-	request.send();
-  </script>
+    request.send();
+</script>
 </html>
