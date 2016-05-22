@@ -10987,7 +10987,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <parts>
 <part name="U1" library="esp8266modules" deviceset="ESP12E" device="SMD"/>
 <part name="DC/DC" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
-<part name="OUTPUT_CON" library="con-molex" deviceset="C-GRID-06" device="-70543"/>
+<part name="RELAYS_CON" library="con-molex" deviceset="C-GRID-06" device="-70543"/>
 <part name="RELAIS_1" library="ic-package" deviceset="DIL14" device="S" value="V23100-V4005-A010"/>
 <part name="RELAIS_2" library="ic-package" deviceset="DIL14" device="S" value="V23100-A4005-A010"/>
 <part name="RELAIS_3" library="ic-package" deviceset="DIL14" device="S" value="V23100-A4005-A010"/>
@@ -11006,12 +11006,12 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instances>
 <instance part="U1" gate="G$1" x="101.6" y="45.72"/>
 <instance part="DC/DC" gate="G$1" x="-10.16" y="68.58"/>
-<instance part="OUTPUT_CON" gate="-1" x="170.18" y="78.74"/>
-<instance part="OUTPUT_CON" gate="-2" x="170.18" y="76.2"/>
-<instance part="OUTPUT_CON" gate="-3" x="170.18" y="73.66"/>
-<instance part="OUTPUT_CON" gate="-4" x="170.18" y="71.12"/>
-<instance part="OUTPUT_CON" gate="-5" x="170.18" y="68.58"/>
-<instance part="OUTPUT_CON" gate="-6" x="170.18" y="66.04"/>
+<instance part="RELAYS_CON" gate="-1" x="170.18" y="78.74"/>
+<instance part="RELAYS_CON" gate="-2" x="170.18" y="76.2"/>
+<instance part="RELAYS_CON" gate="-3" x="170.18" y="73.66"/>
+<instance part="RELAYS_CON" gate="-4" x="170.18" y="71.12"/>
+<instance part="RELAYS_CON" gate="-5" x="170.18" y="68.58"/>
+<instance part="RELAYS_CON" gate="-6" x="170.18" y="66.04"/>
 <instance part="RELAIS_1" gate="G$1" x="73.66" y="88.9"/>
 <instance part="RELAIS_2" gate="G$1" x="104.14" y="88.9"/>
 <instance part="RELAIS_3" gate="G$1" x="139.7" y="88.9"/>
@@ -11159,7 +11159,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="149.86" y1="96.52" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="101.6" x2="124.46" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="101.6" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="OUTPUT_CON" gate="-2" pin="S"/>
+<pinref part="RELAYS_CON" gate="-2" pin="S"/>
 <wire x1="124.46" y1="96.52" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="76.2" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="RELAIS_3" gate="G$1" pin="1"/>
@@ -11175,7 +11175,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="RELAIS_3" gate="G$1" pin="8"/>
 <wire x1="129.54" y1="78.74" x2="147.32" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="78.74" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="OUTPUT_CON" gate="-1" pin="S"/>
+<pinref part="RELAYS_CON" gate="-1" pin="S"/>
 <wire x1="147.32" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="81.28" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
 <junction x="147.32" y="81.28"/>
@@ -11192,13 +11192,13 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pinref part="RELAIS_2" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
 <junction x="88.9" y="96.52"/>
-<pinref part="OUTPUT_CON" gate="-4" pin="S"/>
+<pinref part="RELAYS_CON" gate="-4" pin="S"/>
 <wire x1="167.64" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="OUTPUT_CON" gate="-3" pin="S"/>
+<pinref part="RELAYS_CON" gate="-3" pin="S"/>
 <pinref part="RELAIS_2" gate="G$1" pin="8"/>
 <wire x1="167.64" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="73.66" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
@@ -11211,7 +11211,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="OUTPUT_CON" gate="-6" pin="S"/>
+<pinref part="RELAYS_CON" gate="-6" pin="S"/>
 <wire x1="167.64" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="66.04" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="76.2" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
@@ -11237,7 +11237,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="83.82" y1="81.28" x2="81.28" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="78.74" x2="83.82" y2="68.58" width="0.1524" layer="91"/>
 <junction x="83.82" y="78.74"/>
-<pinref part="OUTPUT_CON" gate="-5" pin="S"/>
+<pinref part="RELAYS_CON" gate="-5" pin="S"/>
 <wire x1="83.82" y1="68.58" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
